@@ -1,5 +1,16 @@
 {
-    "require-dev": {
-        "phpunit/phpunit": "^9"
-    }
+	"name": "davidmwhynot/php-mysql-orm",
+	"description": "PHP with MySQL ORM",
+	"scripts": {
+		"test": "./vendor/bin/phpunit --coverage-html ./coverage --whitelist src/ --bootstrap vendor/autoload.php tests",
+		"test-specific": "./vendor/bin/phpunit --coverage-html ./coverage --whitelist src/ --bootstrap vendor/autoload.php --filter test_get_relationship_between_entities tests"
+	},
+	"autoload": {
+		"classmap": [
+			"src/"
+		]
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9"
+	}
 }

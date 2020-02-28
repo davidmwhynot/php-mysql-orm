@@ -1,7 +1,7 @@
 <?php
 // SETUP ENVIRONMENT
 
-if (file_exists(dirname(__DIR__) . '/.env.php')) {
+if (file_exists(dirname(__DIR__) . '/php-mysql-orm/.env.php')) {
 	include ".env.php";
 
 	if (!defined('DB_USER')) {
